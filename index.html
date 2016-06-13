@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Web UI</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/taskdata.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- additional styles and fonts -->
+		<link rel="stylesheet" href="css/main.css"/>
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic,latin-ext,cyrillic-ext' rel='stylesheet' type='text/css'>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+						<h1 style="margin-top:20%;">Web UI</h1>
+				</section>
+				<section class="align-left">
+						<h3>О чем доклад</h3>
+						<ul>
+							<li>Frontend «тогда и сейчас»</li>
+							<li>Frameworks and libraries</li>
+		 					<li>Интеграция приложений</li>
+		 					<li>Низкоуровневое программирование</li>
+							<li>Производительность</li>
+						</ul>
+				</section>
+				<section class="align-left">
+					<h3>Frontend «тогда»</h3>
+					<table width="100%">
+						<tr>
+							<td style="padding:0px; vertical-align:top;">
+								<ul>
+									<li>Теплый ламповый Web 1.0</li>
+ 									<li>Java Applets <span class="tag">&lt;embed&gt;</span></li>
+ 									<li>ActiveX <span class="tag">&lt;object&gt;</span></li>
+ 									<li>Flash</li>
+ 									<li><span class="tag">&lt;frameset&gt;</li>
+ 									<li>Silverlight</li>
+								</ul>
+							</td>
+							<td><div style="background-image:url(img/1.gif); height:343px; width:300px;"/></td>
+						</tr>
+					</table>
+				</section>
+				<section class="align-left">
+					<h3>Frontend «сейчас»</h3>
+					<div class="logos">
+						<img src="img/ag.png" id="logo-ag"/>
+						<img src="img/bs.png" id="logo-bs"/>
+						<img src="img/bw.png" id="logo-bw"/>
+						<img src="img/cs.png" id="logo-cs"/>
+						<img src="img/fn.jpg" id="logo-fn"/><br/>
+						<img src="img/fw.jpeg" id="logo-fw"/>
+						<img src="img/hjc.png" id="logo-hjc"/>
+						<img src="img/jm.svg" id="logo-jm"/>
+						<img src="img/mc.png" id="logo-mc"/>
+						<img src="img/jq.png" id="logo-jq"/><br/>
+						<img src="img/ls.png" id="logo-ls"/>
+						<img src="img/npm.png" id="logo-npm"/>
+						<img src="img/rt.png" id="logo-rt"/>
+						<img src="img/sc.jpeg" id="logo-sc"/>
+						<img src="img/ss.png" id="logo-ss"/>
+						<img src="img/ts.png" id="logo-ts"/><br/>
+						<img src="img/wp.png" id="logo-wp"/>
+						<img src="img/wa.jpg" id="logo-wa"/>
+				  </div>
+				</section>
+				<section class="align-left">
+					<h3>Кроссплатформенность JS</h3>
+					<ul>
+						<li>Сервер</li>
+						<li>Браузер</li>
+						<li>Мобильные платформы</li>
+						<li>Десктопы</li>
+						<li>Smart TV</li>
+					</ul>
+				</section>
+				<section class="align-left">
+					<h3>Библиотеки и фреймворки</h3>
+					<ul>
+						<li><strong>Библиотека</strong>&nbsp;&mdash; готовый набор функций<br/><small>jQuery, React, moment.js</small></li>
+						<li><strong>Фреймворк</strong>&nbsp;&mdash; набор связанных библиотек и инструментов, определяющий архитектуру проекта<br/><small>AngularJS, ExtJS</small></li>
+					</ul>
+				</section>
+				<section class="align-left">
+					<h3>Критерии выбора</h3>
+					<ul>
+						<li>Серверные, клиентские, смешанные</li>
+			      <li>Сборка и компиляция проекта</li>
+			      <li>Акцент: бизнес-логика, ui-компоненты</li>
+			     	<li>Поддержка различных платформ</li>
+			     	<li>Удобство разработки</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				center: false,
+				slideNumber: 'c/t',
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
