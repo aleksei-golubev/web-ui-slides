@@ -113,7 +113,7 @@
 					<ul>
 						<li>Серверные, клиентские, смешанные</li>
 			      <li>Сборка и компиляция проекта</li>
-			      <li>Акцент: бизнес-логика, UI-компоненты</li>
+			      <li>Акцент: бизнес-логика, представление</li>
 			     	<li>Поддержка различных платформ</li>
 						<li>Удобство и скорость разработки</li>
 					</ul>
@@ -137,8 +137,141 @@
 				<section class="align-left">
 					<h3>AngularJS</h3>
 				</section>
-				<section  class="align-left">
+				<section class="align-left">
 				  <h3>Meteor</h3>
+				</section>
+				<section class="align-left">
+					<h3>jQuery</h3>
+					<table>
+						<tr><td>
+							<h5>Плюсы</h5>
+							<ul>
+								<li>Просто работать с DOM</li>
+								<li>Есть библиотека базовых компонентов jQuery UI</li>
+								<li>Множество плагинов</li>
+								<li>Просто работать с Ajax</li>
+								<li>Широко распространен</li>
+							</ul>
+						</td><td>
+							<h5>Минусы</h5>
+							<ul>
+								<li>Недостаточно для современного SPA</li>
+							</ul>
+						</td></tr>
+					</table>
+					<h5 style="margin-top:17px; margin-bottom: 3px;">Альтернатива</h5>
+					<ul>
+						<li>prototype.js</li>
+						<li>mootools</li>
+					</ul>
+				</section>
+				<section class="align-left">
+					<h3>jQuery vs ...</h3>
+					<canvas class="stretch" data-chart="bar">
+						Library, jQuery, prototype.js, mootools
+						Usage, 70.2, 2.1, 3.5
+					</canvas>
+				</section>
+				<section class="align-left">
+					<h3>ExtJS</h3>
+					<table>
+						<tr><td>
+							<h5>Плюсы</h5>
+							<ul>
+								<li>Многое из коробки (MVVM, MVC, Store, etc.)</li>
+								<li>Широкая библиотека компонентов</li>
+								<li>Возможность писать свои компоненты</li>
+								<li>Быстрая разработка</li>
+							</ul>
+						</td><td>
+							<h5>Минусы</h5>
+							<ul>
+								<li>Сложная архитектура</li>
+								<li>Генерирует много HTML-кода</li>
+								<li>Дорогой</li>
+								<li>Отличное от стандартного окружение</li>
+							</ul>
+						</td></tr>
+					</table>
+				</section>
+				<section class="align-left">
+					<h3>React</h3>
+						<table>
+							<tr><td>
+								<h5>Плюсы</h5>
+								<ul>
+									<li>Прост в освоении</li>
+									<li>Можно внедрять в отдельные части проекта</li>
+									<li>Компонентный подход к разработке</li>
+									<li>Много сторонних компонентов</li>
+								</ul>
+							</td><td>
+								<h5>Минусы</h5>
+								<ul>
+									<li>Библиотека, чего для SPA недостаточно</li>
+								</ul>
+							</td></tr>
+						</table>
+				</section>
+				<section class="align-left">
+					<h3>CSS фреймворки</h3>
+					<ul>
+						<li>Bootstrap</li>
+						<li>MaterializeCSS</li>
+						<li>Foundation</li>
+					</ul>
+				</section>
+				<section class="align-left">
+					<h3>Интеграция приложений</h3>
+					<ul>
+						<li>Отсутствие единого подхода к разработке</li>
+						<li>Разные технологии в &laquo;подпроектах&raquo;</li>
+						<li>Выстраивание функциональности от пожеланий бизнес</li>
+						<li>Отсутствие связей между приложениями</li>
+					</ul>
+				</section>
+				<section class="align-left">
+					<h3>Монолит</h3>
+					<table>
+						<tr><td>
+							<h5>Плюсы</h5>
+							<ul>
+								<li>Единая кодовая база</li>
+								<li>Хорошее прослеживание связей</li>
+							</ul>
+						</td><td>
+							<h5>Минусы</h5>
+							<ul>
+								<li>Нельзя обновлять по частям</li>
+								<li>Усложнение приложения в целом</li>
+							</ul>
+						</td></tr>
+					</table>
+				</section>
+				<section class="align-left">
+					<h3>Использование iframe</h3>
+					<table>
+						<tr><td>
+							<h5>Плюсы</h5>
+							<ul>
+								<li>Компонентный подход к разработке</li>
+								<li>Можно обновлять по частям</li>
+							</ul>
+						</td><td>
+							<h5>Минусы</h5>
+							<ul>
+								<li>Слабая связанность отдельных приложений</li>
+								<li>Усложенение поиска ошибок в решении в целом</li>
+							</ul>
+						</td></tr>
+					</table>
+				</section>
+				<section class="align-left">
+					<h3>F2</h3>
+					<ul>
+						<li>Создание контейнеров</li>
+						<li>Emitter и listener</li>
+					</ul>
 				</section>
 			</div>
 		</div>
@@ -157,6 +290,8 @@
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/chart/Chart.min.js' },
+        	{ src: 'plugin/chart/csv2chart.js' },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
