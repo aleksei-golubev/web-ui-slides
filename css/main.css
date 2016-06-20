@@ -4,11 +4,46 @@
 .tag {
   color: #05abd6;
 }
+section .inline-logos, section .header-logos, section .inline-logos-small {
+  display: inline-block;
+}
+section .inline-logos > img {
+  height: 100px;
+  border-width: 0px;
+  box-shadow: none;
+  margin: 5px 0px;
+}
+
+section .inline-logos-small > img {
+  height: 50px;
+  border-width: 0px;
+  box-shadow: none;
+  margin: 15px 10px;
+  vertical-align: middle;
+}
+
+section .header-logos > img {
+  height: 1em;
+  border-width: 0px;
+  box-shadow: none;
+  margin: 0px 0px;
+  vertical-align: middle;
+}
+
+section .header-logos > img.ej  {
+  height: 2.5em;
+}
+
+section .header-logos > img.rt  {
+  height: 1.2em;
+}
+
 section > .logos > img {
   border-width: 0px;
   box-shadow: none;
   position: relative;
 }
+
 section > .logos {
   padding-left: 5%;
 }
@@ -32,8 +67,8 @@ section > .logos {
   z-index: 48;
 }
 #logo-fn {
-  width: 200px;
-  left: 20px;
+  height: 100px;
+  left: 100px;
   z-index: 48;
 }
 #logo-fw {

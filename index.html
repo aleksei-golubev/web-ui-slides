@@ -38,7 +38,6 @@
 							<li>Frameworks and libraries</li>
 		 					<li>Интеграция приложений</li>
 							<li>Производительность</li>
-		 					<li>Низкоуровневое программирование</li>
 						</ul>
 				</section>
 				<section class="align-left">
@@ -66,7 +65,7 @@
 						<img src="img/bs.png" id="logo-bs"/>
 						<img src="img/bw.png" id="logo-bw"/>
 						<img src="img/cs.png" id="logo-cs"/>
-						<img src="img/fn.jpg" id="logo-fn"/><br/>
+						<img src="img/fn.png" id="logo-fn"/><br/>
 						<img src="img/fw.jpeg" id="logo-fw"/>
 						<img src="img/hjc.png" id="logo-hjc"/>
 						<img src="img/jm.svg" id="logo-jm"/>
@@ -95,12 +94,26 @@
 				<section class="align-left">
 					<h3>Библиотеки и фреймворки</h3>
 					<ul>
-						<li><strong>Библиотека</strong>&nbsp;&mdash; готовый набор функций<br/><small>jQuery, React, moment.js</small></li>
-						<li><strong>Фреймворк</strong>&nbsp;&mdash; набор связанных библиотек и инструментов, определяющий архитектуру проекта<br/><small>AngularJS, ExtJS</small></li>
+						<li>
+							<strong>Библиотека</strong>&nbsp;&mdash; готовый набор функций<br/>
+							<small>jQuery, React</small><br/>
+							<div class="inline-logos">
+								<img src="img/jq.png"/>
+								<img src="img/rt.png"/>
+							</div>
+						</li>
+						<li>
+							<strong>Фреймворк</strong>&nbsp;&mdash; набор связанных библиотек и инструментов, определяющий архитектуру проекта<br/>
+							<small>AngularJS, ExtJS</small><br/>
+							<div class="inline-logos">
+								<img src="img/ag.png" />
+								<img src="img/ej.jpg"/>
+							</div>
+						</li>
 					</ul>
 				</section>
 				<section class="align-left">
-					<h3>Причины появления</h3>
+					<h3>Причины появления фреймворков</h3>
 					<ul>
 						<li>Стандартизация подходов к разработке</li>
 						<li>Упрощение и ускорение разработки</li>
@@ -118,65 +131,49 @@
 						<li>Удобство и скорость разработки</li>
 					</ul>
 				</section>
-				<section  class="align-left">
-					<h3>Инфраструктура разработки</h3>
-				</section>
 				<section class="align-left">
-					<h3>Unit-тестирование</h3>
-				</section>
-				<section  class="align-left">
-					<h3>Компилируемые языки</h3>
-				</section>
-				<section class="align-left">
-					<h3>Основные решения для Web</h3>
-					<ul>
-						<li>AngularJS</li>
-						<li>Meteor</li>
-						<li>jQuery</li>
-						<li>ExtJS</li>
-						<li>React</li>
-					</ul>
-				</section>
-				<section class="align-left">
-					<h3>AngularJS</h3>
-				</section>
-				<section class="align-left">
-				  <h3>Meteor</h3>
-				</section>
-				<section class="align-left">
-					<h3>jQuery</h3>
+					<h3>
+						<div class="header-logos">
+							<img src="img/jq.png"/>
+						</div>
+						jQuery
+					</h3>
 					<table>
 						<tr><td>
 							<h5>Плюсы</h5>
 							<ul>
-								<li>Просто работать с DOM</li>
+								<li>Кроссбраузерность</li>
+								<li>Упрощение работы с DOM</li>
 								<li>Есть библиотека базовых компонентов jQuery UI</li>
 								<li>Множество плагинов</li>
 								<li>Просто работать с Ajax</li>
-								<li>Широко распространен</li>
 							</ul>
 						</td><td>
 							<h5>Минусы</h5>
 							<ul>
-								<li>Недостаточно для современного SPA</li>
+								<li>Недостаточно для современного SPA (Single-page Application)</li>
+							</ul>
+							<h5 style="margin-top:17px; margin-bottom: 3px;">Альтернатива</h5>
+							<ul>
+								<li>prototype.js</li>
+								<li>mootools</li>
 							</ul>
 						</td></tr>
 					</table>
-					<h5 style="margin-top:17px; margin-bottom: 3px;">Альтернатива</h5>
-					<ul>
-						<li>prototype.js</li>
-						<li>mootools</li>
-					</ul>
 				</section>
 				<section class="align-left">
 					<h3>jQuery vs ...</h3>
 					<canvas class="stretch" data-chart="bar">
 						Library, jQuery, prototype.js, mootools
-						Usage, 70.2, 2.1, 3.5
+						Usage (%), 70.2, 2.1, 3.5
 					</canvas>
 				</section>
 				<section class="align-left">
-					<h3>ExtJS</h3>
+
+						<div class="header-logos">
+							<img src="img/ej.jpg" class="ej"/>
+						</div>
+
 					<table>
 						<tr><td>
 							<h5>Плюсы</h5>
@@ -192,36 +189,42 @@
 								<li>Сложная архитектура</li>
 								<li>Генерирует много HTML-кода</li>
 								<li>Дорогой</li>
-								<li>Отличное от стандартного окружение</li>
+								<li>Собственное окружение (JAVA, Ruby, SenchaCMD, etc.)</li>
 							</ul>
 						</td></tr>
 					</table>
 				</section>
 				<section class="align-left">
-					<h3>React</h3>
+					<h3>
+						<div class="header-logos">
+							<img src="img/rt.png" class="rt"/>
+						</div>
+						React
+					</h3>
 						<table>
 							<tr><td>
 								<h5>Плюсы</h5>
 								<ul>
+									<li>Разбиение представления на понятные компоненты</li>
+									<li>Хранение состояния компонента</li>
+									<li>Серверный рендеринг</li>
 									<li>Прост в освоении</li>
-									<li>Можно внедрять в отдельные части проекта</li>
-									<li>Компонентный подход к разработке</li>
 									<li>Много сторонних компонентов</li>
 								</ul>
 							</td><td>
 								<h5>Минусы</h5>
 								<ul>
-									<li>Библиотека, чего для SPA недостаточно</li>
+									<li>Недостаточно для современного SPA</li>
+									<li>Плохая документация</li>
 								</ul>
 							</td></tr>
 						</table>
 				</section>
 				<section class="align-left">
 					<h3>CSS фреймворки</h3>
-					<ul>
-						<li>Bootstrap</li>
-						<li>MaterializeCSS</li>
-						<li>Foundation</li>
+					<div class="inline-logos-small"><img src="img/bs.png"/></div> Bootstrap<br/>
+					<div class="inline-logos-small"><img src="img/mc.png"/></div> MaterializeCSS<br/>
+					<div class="inline-logos-small"><img src="img/fn.png" style="margin-left:20px"/></div>	Foundation
 					</ul>
 				</section>
 				<section class="align-left">
@@ -353,7 +356,37 @@
 					{ src: 'plugin/chart/Chart.min.js' },
         	{ src: 'plugin/chart/csv2chart.js' },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
+				],
+
+				defaults: {
+	          global: {
+	              title: { fontColor: "#FFF" },
+	          },
+	          legend: {
+	              labels: { fontColor: "#FFF" },
+	          },
+	          scale: {
+	              scaleLabel: { fontColor: "#FFF" },
+	              gridLines: { color: "#FFF", zeroLineColor: "#FFF" },
+	              ticks: { fontColor: "#FFF" },
+	          }
+	        },
+
+				chart: {
+					defaults: {
+						global: {
+							dafultFontColor: "#1c437d",
+							defaultFontSize: 26,
+							defaultFontFamily: "PT Sans, Source Sans Pro, Helvetica, sans-serif",
+							legend: {
+								labels: { fontColor: "#1c437d" }
+							}
+						},
+						scale: {
+							ticks: { fontColor: "#1c437d" }
+						}
+					}
+				}
 			});
 		</script>
 	</body>
