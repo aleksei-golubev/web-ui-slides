@@ -21,7 +21,7 @@ body {
   font-family: "PT Sans", "Source Sans Pro", Helvetica, sans-serif;
   font-size: 38px;
   font-weight: normal;
-  color: #222; }
+  color: #fff; }
 
 ::selection {
   color: #fff;
@@ -43,7 +43,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #1c437d;
+  color: #fff;
   font-family: "PT Sans", "Source Sans Pro", Helvetica, sans-serif;
   font-weight: 600;
   line-height: 1.2;

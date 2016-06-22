@@ -26,7 +26,8 @@
 		</script>
 	</head>
 	<body>
-		<div class="reveal">
+
+		<div class="reveal" id="particles-js">
 			<div class="slides">
 				<section>
 						<h1 style="margin-top:20%;">Web UI</h1>
@@ -131,6 +132,123 @@
 						<li>Удобство и скорость разработки</li>
 					</ul>
 				</section>
+
+				<!-- IR -->
+
+<section class="align-left">
+	<h3>Инфраструктура разработки в Enterprise</h3>
+	<img src="img/enterprise.jpg" />
+</section>
+
+<section class="align-left">
+	<h3>Основные требования Enterprise</h3>
+	<ul>
+		<li>Маштабируемость. "Maintainable и Scalable"</li>
+		<li>Безопасность</li>
+		<li>Надежность</li>
+		<li>Быстродействие</li>
+	</ul>
+
+</section>
+
+<section class="align-left">
+	<h3>Пакетные менеджеры</h3>
+	<img src="img/npm_bower.jpg" />
+</section>
+
+<section class="align-left">
+	<h3>Таск-менеджеры</h3>
+	<img src="img/grunt-gulp-brunch.png" />
+</section>
+
+<section class="align-left">
+	<h3>Компилируемые языки</h3>
+	<img src="img/designer-languages.png" style="width: 500px;" />
+	<h5>OR...</h3>
+	<img src="img/mona-lisa.jpg" style="    width: 900px;" />
+</section>
+
+<section class="align-left">
+	<h3>TypeScript. Баланс между C# и Javascript.</h3>
+	<ul>
+		<li>Система для работы с модулями/классами — можно создать интерфейсы, модули, классы</li>
+		<li>Наследование (в том числе множественное наследование)</li>
+		<li>Собственные типы данных</li>
+		<li>Универсальные-интерфейсы (generic interfaces)</li>
+		<li>Анотации</li>
+		<li>Сигнатуры методов</li>
+	</ul>
+</section>
+
+<section class="align-left">
+	<h3>Отладка приложения. Source Maps.</h3>
+	<img src="img/source-map-es6.png" style="    width: 900px;" />
+</section>
+
+<section class="align-center">
+	<h3>Поговорим о минусах. JS симимильными шагами и нужны ли в будущем подобные решения. </h3>
+	<img src="img/ES6.jpg" style="height: 460px;" />
+</section>
+
+<section class="align-left">
+	<h3>Unit-тестирование / E2E-тестирование. Анализаторы кода.</h3>
+	<ul>
+		<li>Анализаторы кода. Codelyzer.</li>
+		<li>Инструменты тестирование. Karma / Jasmine. E2E Selenium тестирование веб-интерфейсов.</li>
+		<li>Cтатистика покртытия кода. Istambul.</li>
+	</ul>
+</section>
+
+<section class="align-left">
+	<h3>Графика в WEB: SVG, Canvas.</h3>
+	<ul>
+		<li>SVG. Формат описания векторной графики средствами XML.</li>
+		<li>Canvas. API по работе с холстом. </li>
+		<li>Трассировка лучей. WebGL (3D)</li>
+	</ul>
+	<img src="img/graphic.jpg" style="height: 325px;" />
+</section>
+
+<section class="align-left">
+	<h3>MEAN стек</h3>
+	<ul>
+		<li>MongoDB, Express, Angular и Node.js</li>
+		<li>“Фулл-стек” разработка и изоморфоное программирование.</li>
+		<li>Единая модель данных на клиенте и сервере.</li>
+		<li>Minimongo. Real-time приложения.</li>
+	</ul>
+	<br/>
+
+</section>
+
+<section class="align-left">
+	<h3>Кто использует Node.js</h3>
+	<img src="img/n1.jpeg" />
+</section>
+<section class="align-left">
+	<h3>И еще...</h3>
+	<img src="img/n2.jpeg" />
+</section>
+<section class="align-left">
+	<h3>Еще немного...</h3>
+	<img src="img/n3.jpeg" />
+</section>
+<section class="align-left">
+	<h3>Последний слайд про Node.js</h3>
+	<img src="img/n4.jpeg" />
+</section>
+<section class="align-left">
+	<h3>Кто использует Meteor.</h3>
+	<img src="img/meteor.png" />
+</section>
+
+<section class="align-left">
+	<h3>WebSockets</h3>
+</section>
+
+
+				<!-- END IR -->
+
 				<section class="align-left">
 					<h3>
 						<div class="header-logos">
@@ -364,10 +482,19 @@
 			</div>
 		</div>
 
+	        <script src="js/particles.min.js"></script>
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-
+	<style>
+#particles-js {
+    background: #1e5799;
+    background: linear-gradient(to right, #29AEDA 0%,#003F71 100%);
+}
+</style>
 		<script>
+
+
+
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
@@ -399,20 +526,130 @@
 
 				chart: {
 					defaults: {
+
 						global: {
-							dafultFontColor: "#1c437d",
+							dafultFontColor: "#FFF",
 							defaultFontSize: 26,
 							defaultFontFamily: "PT Sans, Source Sans Pro, Helvetica, sans-serif",
 							legend: {
-								labels: { fontColor: "#1c437d" }
+								labels: { fontColor: "#fff" }
 							}
 						},
 						scale: {
-							ticks: { fontColor: "#1c437d" }
+
+  							gridLines: { color: "#FFF", zeroLineColor: "#FFF" }, 
+							ticks: { fontColor: "#FFF" }
 						}
-					}
+					},
+					bar: { backgroundColor:  [ "#fff" , "#fff", "#fff" ]}
 				}
 			});
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#fff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#fff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 0.5,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+
 		</script>
 	</body>
 </html>
