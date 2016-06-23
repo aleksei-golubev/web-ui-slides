@@ -4,6 +4,10 @@
 .tag {
   color: #15e6bb;
 }
+.plus-minus li {
+  font-size: 80%;
+}
+
 section .inline-logos, section .header-logos, section .inline-logos-small {
   display: inline-block;
 }
@@ -55,10 +59,6 @@ section .header-logos > img.ej  {
 
 section .header-logos > img.rt  {
   margin-bottom: 5px;
-}
-
-section .header-logos > img.jq  {
-  
 }
 
 section > .logos > img {
