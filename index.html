@@ -551,11 +551,18 @@ $(function(){
 				<section class="align-left">
 					<h3>Производительность</h3>
 					<ul>
-						<li>DevTools</li>
+						<li>DevTools<br>
+							<small>https://developer.chrome.com/devtools/docs/cpu-profiling</small>
+						</li>
 						<li>High Resolution Time API</li>
+							<small><span class="tag">performance.now()</span> выше точность, чем у <span>Date.now()</span></small>
 						<li>Benchmark.js</li>
 						<li>perf</li>
 					</ul>
+					<pre><code data-trim data-noescape>
+perf record d8 --perf-basic-prof test.js
+perf report
+					</code></pre>
 				</section>
 				<section class="align-left">
 					<h3>Низкоуровневое программирование</h3>
