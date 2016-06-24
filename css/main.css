@@ -7,7 +7,10 @@
 .plus-minus li {
   font-size: 80%;
 }
-
+code {
+  font-size:80% !important;
+  background-color: rgba(0,0,0, 0.5) !important;
+}
 section .inline-logos, section .header-logos, section .inline-logos-small {
   display: inline-block;
 }

@@ -407,7 +407,7 @@
 								<li>Позволяют быстро создать каркас страницы</li>
 								<li>Дают базовую стилистику страницы</li>
 								<li>Адаптивная верстка</li>
-							</ul>
+							</ul><br/><br/>
 							<small>Bootstrap, MaterializeCSS, Foundation</small>
 				</section>
 				<section class="align-left">
@@ -458,9 +458,24 @@
 				<section class="align-left">
 					<h3>F2</h3>
 					<ul>
-						<li>Загрузка на одну страницу приложени</li>
-						<li>Взаимодействие между контейнером и преложениями и между приложениями внутри контейнера</li>
+						<li>Загрузка на одну страницу нескольких приложений</li>
+						<li>Взаимодействие между контейнером и приложениями и между приложениями внутри контейнера</li>
 					</ul>
+					<pre><code data-trim data-noescape>
+/*
+	Hello World from http://openf2.org/
+*/
+
+var _appConfig = {
+  appId: 'com_openf2_examples_javascript_helloworld',
+  manifestUrl: 'http://docs.openf2.org/demos/apps/JavaScript/HelloWorld/manifest.js'
+};
+
+$(function(){
+  F2.init();
+  F2.registerApps(_appConfig);
+});
+					</code></pre>
 				</section>
 				<section class="align-left">
 					<h3>ЕГАИС</h3>
@@ -490,11 +505,21 @@
 							Восприятие:
 								<ul>
 									<li>Правило 20% (заметная разница)</li>
-									<li>Нейтрализация (sqrt(NxM))</li>
+									<li>
+											Нейтрализация ( <span class="tag">sqrt(m&sdot;n)</span> )<br/>
+											<small>A в Firefox работает &rarr; <math><mrow><msqrt><mi><mn>m</mn><mo>&sdot;</mo><mn>n</mn></mi></msqrt></mrow></math></small>
+									</li>
+
 									<li>Фазы ожидания пользователя (активная и пассивная)
 										<ul>
-											<li>Предварительный старт</li>
-											<li>Раннее завершение</li>
+											<li>
+												Предварительный старт<br/>
+												<small>Загрузка наиболее вероятного варианта</small>
+											</li>
+											<li>
+												Раннее завершение
+												<small>Вывод первых результатов до полной загрузки данных</small>
+											</li>
 										</ul>
 									</li>
 									<li>Скорость не всегда то, чего хочет пользователь</li>
