@@ -421,14 +421,14 @@
 				</section>
 				<section class="align-left">
 					<h3>Монолит</h3>
-					<table>
-						<tr><td>
+					<table class="plus-minus">
+						<tr><td width="50%">
 							<h5>Плюсы</h5>
 							<ul>
 								<li>Любые варианты взаимодействия между модулями</li>
 								<li>Простой и понятный</li>
 							</ul>
-						</td><td>
+						</td><td width="50%">
 							<h5>Минусы</h5>
 							<ul>
 								<li>Нельзя обновлять по частям</li>
@@ -439,14 +439,14 @@
 				</section>
 				<section class="align-left">
 					<h3>Использование iframe</h3>
-					<table>
-						<tr><td>
+					<table class="plus-minus">
+						<tr><td width="50%">
 							<h5>Плюсы</h5>
 							<ul>
 								<li>Простое решение</li>
 								<li>Нет влияния изменений одного модуля на другие</li>
 							</ul>
-						</td><td>
+						</td><td width="50%">
 							<h5>Минусы</h5>
 							<ul>
 								<li>Слабая связанность отдельных приложений</li>
@@ -555,7 +555,7 @@ $(function(){
 							<small>https://developer.chrome.com/devtools/docs/cpu-profiling</small>
 						</li>
 						<li>High Resolution Time API</li>
-							<small><span class="tag">performance.now()</span> выше точность, чем у <span>Date.now()</span></small>
+							<small><span class="tag">performance.now()</span> выше точность, чем у <span class="tag">Date.now()</span></small>
 						<li>Benchmark.js</li>
 						<li>perf</li>
 					</ul>
@@ -566,21 +566,34 @@ perf report
 				</section>
 				<section class="align-left">
 					<h3>Низкоуровневое программирование</h3>
-					<ul>
-						<li>asm.js - вложенный комплекс JavaScript</li>
-						<li>WebAssembly - отдельный язык</li>
-					</ul>
+					<center>
+					WebAssembly<br/>
+					<img src="img/wa-demo.jpg"/>
+					</center>
 				</section>
 				<section class="align-left">
 					<h3>Summary</h3>
-					<h5>Упустили</h5>
-					<ul>
-						<li>Lodash, Underscore</li>
-						<li>Yeoman</li>
-						<li>Ember.js</li>
-						<li>LESS, SASS</li>
-						<li>Handlebars, Mustache</li>
-					</ul>
+					<table>
+						<tr><td width="50%">
+							<h5>Рассказали</h5>
+							<ul>
+								<li>Мейнстрим</li>
+								<li>Основные инструменты разработки на JS</li>
+								<li>Архитектурные решения</li>
+								<li>Немного производительности</li>
+							</ul>
+						</td><td width="50%">
+							<h5>Упустили</h5>
+							<ul>
+								<li>Lodash, Underscore</li>
+								<li>Yeoman</li>
+								<li>Ember.js</li>
+								<li>LESS, SASS</li>
+								<li>Handlebars, Mustache</li>
+								<li>Flow</li>
+							</ul>
+						</td></tr>
+					</table>
 				</section>
 			</div>
 		</div>
