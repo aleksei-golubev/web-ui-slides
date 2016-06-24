@@ -27,6 +27,16 @@ section .inline-logos img {
   margin: 5px 0px;
 }
 
+section .inline-logos-small {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding-top:0px;
+  min-width: 70px;
+  height:70px;
+  text-align: center;
+}
+
 section .inline-logos-small > img {
   height: 50px;
   border-width: 0px;
@@ -68,11 +78,13 @@ section > .logos > img {
 }
 
 section > .logos {
-    padding-left: 5%;
+    padding-left: 7%;
     background: #fff;
-    border: 4px solid #222;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    height: 595px;
+    border-radius: 5px;
+    opacity: 1;
+
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);*/
+    height: 600px;
 }
 
 #logo-ag {
